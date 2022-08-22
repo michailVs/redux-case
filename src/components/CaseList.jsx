@@ -53,7 +53,7 @@ const CaseList = () => {
     }
     return (
       <div className="App">
-        <div>Баланс: {balance} | <button onClick={() => dispatch(addBalance(Number(prompt())))}>+</button></div>
+        <div>Баланс: {balance} | <button onClick={() => dispatch(addBalance(Number(prompt('Введите сумму').match(/\d*/))))}>+</button></div>
         {isCase === false || randomItem.length < 0
         ? <div>
             <h2>Сначала откройте кейс</h2>

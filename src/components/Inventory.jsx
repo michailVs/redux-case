@@ -13,7 +13,7 @@ const Inventory = () => {
     }
     return (
         <div>
-            <div>Баланс: {balance} | <button onClick={() => dispatch(addBalance(Number(prompt('Введите сумму'))))}>+</button></div>
+            <div>Баланс: {balance} | <button onClick={() => dispatch(addBalance(Number(prompt('Введите сумму').match(/\d*/))))}>+</button></div>
             {invent.length < 0
             ? <h3>Инвентарь пуст</h3>
             : <div>
