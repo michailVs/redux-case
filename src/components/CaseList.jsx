@@ -40,7 +40,6 @@ const CaseList = () => {
         if (randomItem.length < 0) {
           return false
         } else {
-          dispatch(addItem(randomItem))
           setIsCase(false)
           setRandomItem([])
         }
